@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = '<Azure1>'
-      def webAppName = '<jenkinsweb>'
+      def webAppName = '<jenweb1>'
       // login Azure
       withCredentials([azureServicePrincipal('credentials_id')]) {
     sh 'az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID'
